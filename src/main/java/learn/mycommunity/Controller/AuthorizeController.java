@@ -1,4 +1,4 @@
-package learn.mycommunity.helloController;
+package learn.mycommunity.Controller;
 
 import learn.mycommunity.dto.AccessTokenDTO;
 import learn.mycommunity.dto.GithubUser;
