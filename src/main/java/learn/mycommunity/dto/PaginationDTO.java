@@ -31,12 +31,12 @@ public class PaginationDTO {
             if (page - i > 0) {
                 pages.add(0, page - i);
             }
-            if (page + i < totalPage) {
+            if (page + i <= totalPage) {
                 pages.add(page + i);
             }
         }
         showPrevious = page != 1;
-        showNext = page.equals(totalPage);
+        showNext = page.intValue() != totalPage.intValue();
         showFirstPage = !pages.contains(1);
         showEndPage = !pages.contains(totalPage);
     }
